@@ -21,8 +21,7 @@ class CreateTrainData():
             for line in fj:
                 line = json.loads(line)
                 doc_id = line["docid"]
-                if doc_id == "a6a3d39d-cd15-416c-a809-43b9f126ae15":
-                    print("うんち")
+                #if doc_id == "a6a3d39d-cd15-416c-a809-43b9f126ae15":
                 docs_dict[doc_id].append(line["title"])
                 docs_dict[doc_id].append(line["text"])
                 doc_len = len(line["text"])
