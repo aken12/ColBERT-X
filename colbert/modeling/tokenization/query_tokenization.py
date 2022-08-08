@@ -58,8 +58,6 @@ class QueryTokenizer():
         if bsize:
             batches = _split_into_batches(ids, mask, bsize)
             return batches
-        print(ids,mask)
-        exit()
         return ids, mask
 
 class QueryTokenizer_X():
@@ -134,5 +132,7 @@ class QueryTokenizer_X():
         if bsize:
             batches = _split_into_batches(ids, mask, bsize)
             return batches
-        print(mask)
+        #print(mask)
+        #print(ids)
+        #exit()
         return ids, mask

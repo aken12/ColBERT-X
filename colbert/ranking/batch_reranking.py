@@ -138,7 +138,8 @@ def batch_rerank(args):
                     #print(scores)
 
                     for rank,idx in enumerate(scores_indices):
-                        docid = id_list[idx]
+                        pid = pids[idx] #まずpassage idを拾ってきて
+                        docid = id_list[pid] #そこからdoc idに戻す
                         #score = scores[rank]
                         if docid not in dids:
                             dids.append(docid)
